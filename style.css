@@ -1,0 +1,101 @@
+div,
+header,
+main,
+h3,
+h1,
+h2,
+p,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    color: black;
+    background-color: #d97652;
+    border: 0;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+.luppy {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.center {
+    max-width: 800px;
+    margin: auto;
+}
+
+.a11y-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    }
+
+
+
+.popup {
+    max-width: 400px;
+    max-height: 400px;
+    background: url(./프사.jpg) no-repeat center center / cover;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px;
+    border-radius: 10px;
+    color: red;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+
+    display: none;
+}
+
+.btn-close {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.popup.active {
+    display: block;
+}
+
+.popup.active + .dim {
+    display: block;
+}
+
+/* 검은 배경 */
+.dim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .center {
+        text-align: center;
+    }
+}
