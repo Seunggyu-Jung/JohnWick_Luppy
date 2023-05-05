@@ -1,3 +1,4 @@
+/* reset CSS */
 div,
 header,
 main,
@@ -19,21 +20,6 @@ button {
     padding: 10px;
 }
 
-header {
-    text-align: center;
-}
-
-.luppy {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-}
-
-.center {
-    max-width: 800px;
-    margin: auto;
-}
-
 .a11y-hidden {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
@@ -44,6 +30,70 @@ header {
     padding: 0;
     position: absolute;
     }
+
+/* layout */
+
+.center {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* header */
+
+header {
+    text-align: center;
+}
+
+.luppy {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.luppy.active{
+    display: none;
+}
+
+/*  클릭 이후의 header */
+
+.dead {
+    display: none;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: auto;
+}
+
+.dead.active {
+    display: block;
+}
+
+.afterBtn {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.afterBtn h2 {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.afterBtn img {
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.afterBtn.active {
+    display: block;
+}
+
+
+/* main */
+
 
 
 
